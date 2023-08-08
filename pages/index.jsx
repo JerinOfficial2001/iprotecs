@@ -84,8 +84,9 @@ export default function Home() {
       console.log("Form submitted:", formData);
       toast.success("Form submitted ");
       setOutput(formData);
+      setFormData({ name: "", email: "", password: "", confirmPassword: "" });
     }
-    setFormData({ name: "", email: "", password: "", confirmPassword: "" });
+    
   };
   return (
     <>
